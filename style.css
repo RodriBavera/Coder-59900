@@ -1,0 +1,405 @@
+
+
+
+/*FORMATEO DE DOC*/
+*{
+    padding: 0;
+    margin: 0;
+    width: auto;
+    height: auto;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+#body {
+    
+    background: linear-gradient(#D16887, 70%, #E5CDC9  );
+}
+
+/*ESTILOS NAVBAR/HEADER*/
+#header {
+    width: 100%;
+    height: 100px;
+    background-color: white;
+}
+
+#navBar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-content: center;
+    justify-content:space-between;
+    
+    
+    
+    
+    
+}
+
+.img_logo {
+    margin-left: 30px;
+    width: 90px;
+    height: 90px;
+    
+    
+    
+}
+
+#navBar .img_mollitiam {
+    width: 300px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    
+    margin-left: 200px;
+    
+}
+
+
+
+ul li {
+    list-style: none;
+    display: inline-block;
+    margin-top: 60px;
+       
+    
+}
+ #navBar ul li:hover{
+    background-color:#E5CDC9;
+ }
+.navbar_ul li a {
+    color: #138FA7;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    padding: 5px;
+}
+
+/*ESTILO DEL MAIN*/
+
+#main {
+    width: auto;
+    min-height: 100vh;
+    align-items: center;
+
+    
+        
+}
+
+#baner {
+    width: 100%;
+    height: 400px;
+    align-items: center;
+    
+}
+
+#baner video{
+        width: 80%;
+        height: 400px;
+        object-fit: cover;
+        align-items: center;
+        margin-left: 200px;
+        
+    
+}
+
+#main__resiliencia {
+    display: flex;
+    width: 100%;
+    justify-content:space-evenly;
+    
+}
+
+#resiliencia {
+    width: 30%;
+    align-items: center;
+    height: auto;
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    padding: 15px;
+    border: none ;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)
+    
+}
+
+span{
+    color: #D16887;
+}
+#main__servicios {
+    width: 30%;
+    align-items: center;
+    height: auto;
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    padding: 15px;
+    border: none ;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)
+    
+}
+
+
+
+
+#main__servicios ul li{
+    margin-left: 100px;
+    text-align:left;
+    display: block;
+    flex-direction: column;
+    text-decoration:underline;
+    color: #138FA7;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    
+    
+    
+    
+    
+}
+
+
+
+
+h1 {
+    color: #138FA7;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 80px;
+    
+}
+
+h2 {
+    color: #138FA7;
+    font-size: 40px;
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+#main p {
+    color: #138FA7;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#main img{
+    margin: auto;
+    width: 500px;
+    height: 600px;
+}
+#main .img_contenido {
+    width: 400px;
+    height: 400px;
+    margin-left: 120px;
+    margin-top: 100px;
+}
+
+#formulario  {
+    margin-left: 100px;
+    margin-top: 100px;
+    width: 300px;
+} 
+
+.formulario {
+    margin-bottom: 15px;
+  }
+
+.formulario label {
+    display: block;
+  }
+
+.formulario input,
+.formulario textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+
+
+
+
+
+.contenido {
+    margin:auto;
+    width: 400px;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    
+    "Vinculos OrientacionVocacional"
+    "Limites Adolecentes-niños"
+    ;
+    column-gap: 20px;
+    row-gap: 10px;
+    
+}
+
+
+
+.img_contenido1 {
+    grid-area: Vinculos;
+    width: 100px;
+    height: 100px;
+
+}
+
+.img_contenido2 {
+    grid-area: OrientacionVocacional;
+
+}
+
+.img_contenido3 {
+    grid-area: Limites;
+
+}
+
+.img_contenido4 {
+    grid-area: Adolecentes-niños;
+
+}
+
+/*Estilo de las tarjetas Staff*/
+
+
+
+
+
+
+
+
+/*Estilo del footer*/
+
+#footer {
+    display: flex;
+    justify-content: space-between;
+    height: 120px;
+    background-color: white;
+    margin-top: auto;
+    align-items: center;
+}
+
+
+
+
+#footer p {
+    color: #138FA7;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+#frase_footer p span {
+    color: #D16887;
+    font-style: italic;
+    font-weight: bold;
+    
+
+}
+
+#frase_footer p {
+    
+    font-size: 40px;
+}
+
+
+
+.icono_facebook, .icono_instagram {
+    width: 60px;
+    height: 60px;
+    align-content: center;
+    padding-top: 10px;
+    padding-right: 10px;
+    
+}
+
+
+
+#redes {
+    align-items: center;
+    padding-right: 100px;
+    
+}
+
+#redes p {
+    font-size: 30px;
+}
+
+
+@media (max-width: 1024px) {
+    .contenido {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 150px);
+        column-gap: 20px;
+        row-gap: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    #navBar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #Resiliencia, #servicios {
+        width: 100%;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    #main p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    #main p {
+        font-size: 14px;
+    }
+
+    #footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #footer p {
+        font-size: 14px;
+    }
+
+    #redes img {
+        width: 30px;
+        height: 30px;
+    }
+}
