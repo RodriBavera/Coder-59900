@@ -31,20 +31,14 @@
     padding: 0 15px;
 }
 
-.mx-auto {
-    flex-grow: 1; /* Permite que el logo Mollitiam quede centrado */
-    display: flex;
-    justify-content: center; /* Centra el logo Mollitiam */
-}
 
 .navbar-brand {
     margin-right: auto; 
 }
 
 .navbar-collapse {
-    z-index: 9999;
         display: flex;
-        justify-content: flex-end; /* Alinea el menú a la derecha */
+        justify-content: flex-start; /* Alinea el menú a la derecha */
         flex-grow: 0; /* El menú no crece, ocupa solo el espacio de los enlaces */
         background-color: white; 
     padding: 15px; 
