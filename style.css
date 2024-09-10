@@ -31,16 +31,35 @@
     padding: 0 15px;
 }
 
+.mx-auto {
+    flex-grow: 1; /* Permite que el logo Mollitiam quede centrado */
+    display: flex;
+    justify-content: center; /* Centra el logo Mollitiam */
+}
+
 .navbar-brand {
     margin-right: auto; 
 }
 
 .navbar-collapse {
-    z-index: 9999; 
+    z-index: 9999;
+        display: flex;
+        justify-content: flex-end; /* Alinea el menú a la derecha */
+        flex-grow: 0; /* El menú no crece, ocupa solo el espacio de los enlaces */
+        background-color: white; 
+    padding: 15px; 
+    border-radius: 5px;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-grow: 0;
+    gap: 0px; /* Espacio entre los enlaces */
 }
 
 .img_logo {
-    max-height: 70px; 
+    max-height: 70px;
+    
 }
 .navbar-brand.mx-auto {
     flex-grow: 1; /* Permite que este div ocupe el espacio disponible en el centro */
@@ -49,7 +68,8 @@
 }
 
 .img__mollitiam {
-    max-height: 50px; 
+    max-height: 70px; 
+    
 }
 
 .navbar-toggler {
@@ -60,15 +80,10 @@
     margin-left: 15px; 
 }
 
-.navbar-collapse {
-    background-color: #D16887; 
-    padding: 15px; 
-    border-radius: 5px; 
-}
 
 .navbar-nav .nav-link {
-    color: white; 
-    padding: 10px 15px; 
+    color: #138FA7; 
+    padding: 5px 10px; 
     transition: background-color 0.3s ease;
 }
 
@@ -271,12 +286,16 @@ h2 {
     align-items: center;
     
 }
+.contenido__autoestima p{
+    color: #138FA7;
+}
 
 
 .contenido__autoestima video {
-    max-width: 100%;
+    max-width: 400px;
     height: 400px;
     border-radius: 10px;
+    object-fit: cover;
     
 }
 
