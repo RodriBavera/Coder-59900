@@ -1,0 +1,117 @@
+
+@media (max-width: 768px) {
+    
+
+    #Resiliencia, #servicios {
+        width: 100%;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    #main p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 10px;
+    }
+
+    #main p {
+        font-size: 10px;
+    }
+
+    #footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #footer p {
+        font-size: 10px;
+    }
+
+    #redes img {
+        width: 30px;
+        height: 30px;
+    }
+
+    #section__contenido .contenido__autoestima{
+        
+        flex-direction: column;
+        text-align: center;
+    }
+    .contenido__autoestima p{
+        font-size: 10px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    #section__contenido {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .contenido__autoestima p {
+        font-size: 14px;
+    }
+
+    .contenido__autoestima video {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    #contact-container {
+        flex-direction: row; 
+        justify-content: space-between;
+    }
+
+    #formulario,
+    .mapouter {
+        width: 48%; /* Ambos ocupan el 48% del contenedor para dejar espacio */
+    }
+}
+
+@media (max-width: 768px) {
+    .autoestima h2 {
+        font-size: 1.5rem;
+    }
+
+    .contenido__autoestima p {
+        font-size: 1rem;
+    }
+
+    
+    .autoestima {
+        padding: 15px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .autoestima h2 {
+        font-size: 1.3rem;
+    }
+
+    .contenido__autoestima p {
+        font-size: 0.9rem;
+    }
+    
+    
+    #main__contenido, .autoestima {
+        padding: 10px;
+    }
+}

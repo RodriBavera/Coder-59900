@@ -1,0 +1,97 @@
+/*ESTILO DEL MAIN INICIO*/
+
+#main {
+    width: auto;
+    min-height: 100vh;
+    align-items: center;
+}
+
+#baner {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    
+}
+
+#baner video{
+        width: 1000PX;
+        height: 400px;
+        object-fit: cover;
+        align-items: center;
+}
+
+#main__resiliencia {
+    display: flex;
+    width: 100%;
+    justify-content:space-evenly;
+    
+}
+
+
+#resiliencia {
+    width: 30%;
+    align-items: center;
+    height: auto;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 15px;
+    border: none ;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+}
+
+span{
+    color: #D16887;
+}
+#main__servicios {
+    width: 30%;
+    align-items: center;
+    height: auto;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding: 5px;
+    border: none ;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+}
+
+#main__servicios ul li{
+    text-align:center;
+    display: block;
+    padding: 10px;
+    flex-direction: column;
+    text-decoration:underline;
+    color: #138FA7;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;   
+}
+
+h1 {
+    color: #138FA7;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 60px;
+    
+}
+
+h2 {
+    color: #138FA7;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.mollitiam__resiliencia {
+    color: #138FA7;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

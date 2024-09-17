@@ -1,0 +1,46 @@
+
+
+
+/*Estilo del footer*/
+#footer {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    background-color: white;
+    margin-top: auto;
+    align-items: center;
+}
+
+#footer p {
+    color: #138FA7;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#footer__logo {
+    margin-left: 30px;
+}
+
+#frase_footer p span {
+    color: #D16887;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#frase_footer p {
+    font-size: 20px;
+}
+
+.icono_facebook, .icono_instagram {
+    width: 40px;
+    height: 40px;
+    align-content: center;
+}
+
+#redes {
+    align-items: center;
+    padding-right: 50px;
+}
+
+#redes p {
+    font-size: 20px;
+}
