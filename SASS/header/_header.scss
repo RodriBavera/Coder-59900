@@ -25,6 +25,8 @@
     background-color: white; 
     padding: 15px; 
     border-radius: 5px;
+    z-index: 999;
+    
 }
 
 .navbar-nav {
@@ -64,6 +66,6 @@
 }
 
 .navbar-nav .nav-link:hover {
-    background-color: #138FA7; 
+    background-color: #D16887; 
     color: white;
 }

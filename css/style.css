@@ -37,6 +37,7 @@
   background-color: white;
   padding: 15px;
   border-radius: 5px;
+  z-index: 999;
 }
 
 .navbar-nav {
@@ -74,7 +75,7 @@
 }
 
 .navbar-nav .nav-link:hover {
-  background-color: #138FA7;
+  background-color: #D16887;
   color: white;
 }
 
@@ -171,6 +172,25 @@ h2 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+#main {
+  margin-top: 100px;
+  display: block;
+  text-align: center;
+}
+
+.staff {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 50px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 16px rgba(19, 143, 167, 0.5);
+  display: inline-block;
+  padding: 20px;
+}
+
 /*Estilo formulario de turnos*/
 #section__formulario {
   width: 100%;
@@ -184,9 +204,26 @@ h2 {
   box-shadow: 0 8px 16px rgba(19, 143, 167, 0.5);
 }
 
+.formulario-turnos {
+  border-radius: 15px;
+}
+
 #turnos {
+  display: flex;
   align-items: center;
-  justify-content: baseline;
+  justify-content: center;
+  gap: 20px;
+}
+
+#turnos img {
+  width: 30px; /* Ajustar el tamaño de la imagen según lo necesites */
+  height: auto; /* Mantener la proporción de la imagen */
+}
+
+.form__turnos {
+  text-align: center; /* Asegurar que el texto esté centrado dentro de su propio espacio */
+  font-size: 2em; /* Ajustar el tamaño de la fuente según necesidad */
+  margin-bottom: 0px;
 }
 
 #section__formulario .img__agenda {
@@ -197,12 +234,12 @@ h2 {
 
 #section__formulario .form__turnos {
   font-size: 25px;
-  margin-bottom: 20px;
 }
 
 #section__formulario .form__h2 {
   font-size: 10px;
   padding-bottom: 20px;
+  margin-top: 20px;
 }
 
 hr {
@@ -292,7 +329,7 @@ hr {
 }
 
 #form__profesionales {
-  font-size: 10px;
+  font-size: 15px;
   margin-bottom: 20px;
 }
 
@@ -334,6 +371,10 @@ select:focus {
   cursor: pointer;
 }
 
+.button__agendar:hover {
+  background-color: #D16887; /* Cambiar color al hacer hover */
+}
+
 /*Estilo pages contenido*/
 #body__contenido {
   justify-content: center;
@@ -361,29 +402,31 @@ select:focus {
 .autoestima h2 {
   font-size: 2rem;
   margin-bottom: 20px;
+  text-align: center; /* Centra el título */
 }
 
 .contenido__autoestima {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 20px; /* Espacio entre el párrafo y el video */
 }
 
 .contenido__autoestima p {
   color: #138FA7;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: justify;
+  flex: 1; /* Permite que el párrafo ocupe más espacio */
+  max-width: 600px;
 }
 
 .contenido__autoestima video {
   max-width: 400px;
-  height: 400px;
+  height: auto;
   border-radius: 10px;
   object-fit: cover;
-}
-
-.contenido__autoestima p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  text-align: justify;
+  flex: 1; /* Permite que el video ocupe más espacio */
 }
 
 /*ESTILO MAIN PAGE CONTACTO*/
@@ -664,113 +707,62 @@ select:focus {
     opacity: 1;
   }
 }
-#section__formulario {
-  -webkit-animation: bounce-in-top 2s both;
-  animation: bounce-in-top 2s both;
+.staff {
+  -webkit-animation: slide-in-fwd-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-fwd-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
-@-webkit-keyframes bounce-in-top {
+@-webkit-keyframes slide-in-fwd-top {
   0% {
-    -webkit-transform: translateY(-500px);
-    transform: translateY(-500px);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
+    -webkit-transform: translateZ(-1400px) translateY(-800px);
+    transform: translateZ(-1400px) translateY(-800px);
     opacity: 0;
   }
-  38% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-    opacity: 1;
-  }
-  55% {
-    -webkit-transform: translateY(-65px);
-    transform: translateY(-65px);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-  72% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-  81% {
-    -webkit-transform: translateY(-28px);
-    transform: translateY(-28px);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-  90% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-  95% {
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
   100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
+    -webkit-transform: translateZ(0) translateY(0);
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
   }
 }
-@keyframes bounce-in-top {
+@keyframes slide-in-fwd-top {
   0% {
-    -webkit-transform: translateY(-500px);
-    transform: translateY(-500px);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
+    -webkit-transform: translateZ(-1400px) translateY(-800px);
+    transform: translateZ(-1400px) translateY(-800px);
     opacity: 0;
   }
-  38% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+    transform: translateZ(0) translateY(0);
     opacity: 1;
   }
-  55% {
-    -webkit-transform: translateY(-65px);
-    transform: translateY(-65px);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-  72% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-  81% {
-    -webkit-transform: translateY(-28px);
-    transform: translateY(-28px);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-  90% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-  95% {
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
+}
+#section__formulario {
+  -webkit-animation: slide-in-fwd-center 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-fwd-center 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-in-fwd-center {
+  0% {
+    -webkit-transform: translateZ(-1400px);
+    transform: translateZ(-1400px);
+    opacity: 0;
   }
   100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-fwd-center {
+  0% {
+    -webkit-transform: translateZ(-1400px);
+    transform: translateZ(-1400px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
   }
 }
 

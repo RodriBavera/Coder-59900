@@ -5,7 +5,6 @@
     max-width: 600px;
     height: auto;
     padding: 30px;
-    
     align-items: center;
     justify-content: center;
     background-color: white;
@@ -15,10 +14,28 @@
     
 }
 
+.formulario-turnos {
+    border-radius: 15px;
+}
+
 #turnos {
-    
+    display: flex;
     align-items: center;
-    justify-content:baseline;
+    justify-content:center;
+    gap: 20px;
+}
+
+#turnos img {
+    width: 30px; /* Ajustar el tamaño de la imagen según lo necesites */
+    height: auto; /* Mantener la proporción de la imagen */
+    
+    
+}
+
+.form__turnos {
+    text-align: center; /* Asegurar que el texto esté centrado dentro de su propio espacio */
+    font-size: 2em; /* Ajustar el tamaño de la fuente según necesidad */
+    margin-bottom: 0px;
     
 }
 
@@ -31,13 +48,14 @@
 
 #section__formulario .form__turnos {
     font-size: 25px;
-    margin-bottom: 20px;
+    
     
 }
 
 #section__formulario .form__h2 {
     font-size: 10px;
     padding-bottom: 20px;
+    margin-top: 20px;
     
 }
 
@@ -133,7 +151,7 @@ hr {
 }
 
 #form__profesionales {
-    font-size: 10px;
+    font-size: 15px;
     margin-bottom: 20px;
 }
 
@@ -173,4 +191,8 @@ select:focus {
     background-color: #138FA7;
     color: white;
     cursor: pointer;
+}
+
+.button__agendar:hover {
+    background-color: #D16887; /* Cambiar color al hacer hover */
 }
