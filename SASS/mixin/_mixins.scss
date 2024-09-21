@@ -1,0 +1,7 @@
+
+@mixin fondo-con-sombra($color: rgba(19, 143, 167, 0.5), $sombra: 0 4px 8px rgba(0, 0, 0, 0.2)) {
+    background-color: $color;
+    box-shadow: $sombra;
+    border-radius: 10px;
+}
+

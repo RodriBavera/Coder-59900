@@ -1,4 +1,7 @@
+@import "../mixin/mixins";
+
 /* Estilo general para el section */
+
 #section__contacto {
     display: flex;
     justify-content: center;
@@ -18,9 +21,7 @@
     width: 100%;
     max-width: 1200px;
     padding: 30px;
-    background-color: rgba(19, 143, 167, 0.5);;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    @include fondo-con-sombra;
 }
 
 /* Formulario */
