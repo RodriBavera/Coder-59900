@@ -33,6 +33,8 @@
         font-size: 10px;
     }
 
+    // FOOTER
+
     #footer {
         flex-direction: column;
         text-align: center;
@@ -46,6 +48,8 @@
         width: 30px;
         height: 30px;
     }
+
+    //PAGE CONTENIDO
 
     #section__contenido .contenido__autoestima{
         
@@ -113,5 +117,17 @@
     
     #main__contenido, .autoestima {
         padding: 10px;
+    }
+}
+
+/* Responsive: Ajustar el layout en pantallas pequeñas page contacto */
+@media (max-width: 768px) {
+    #contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mapouter {
+        max-width: 100%;
     }
 }
