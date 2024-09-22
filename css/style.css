@@ -185,7 +185,7 @@ h2 {
   margin-bottom: 50px;
   border: none;
   border-radius: 10px;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.5019607843);
   backdrop-filter: blur(10px);
   box-shadow: 0 8px 16px rgba(19, 143, 167, 0.5);
   display: inline-block;
@@ -411,7 +411,7 @@ h2 {
   margin-bottom: 50px;
   border: none;
   border-radius: 10px;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.5019607843);
   backdrop-filter: blur(10px);
   box-shadow: 0 8px 16px rgba(19, 143, 167, 0.5);
   display: inline-block;

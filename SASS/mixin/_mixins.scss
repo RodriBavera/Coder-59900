@@ -5,3 +5,13 @@
     border-radius: 10px;
 }
 
+@mixin efecto-fondo {
+    border: none;
+    border-radius: 10px;
+    background: #ffffff80;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 16px rgba(19,143, 167, 0.5);
+    display: inline-block;
+    padding: 20px;
+}
+
