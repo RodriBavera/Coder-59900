@@ -9,6 +9,7 @@
 }
 
 #body {
+  overflow-x: hidden;
   background: linear-gradient(#D16887, 40%, #E5CDC9);
 }
 
@@ -106,6 +107,7 @@
   display: flex;
   width: 100%;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 #resiliencia {
@@ -416,8 +418,21 @@ h2 {
   box-shadow: 0 8px 16px rgba(19, 143, 167, 0.5);
   display: inline-block;
   padding: 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards;
 }
 
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 #section__contacto {
   display: flex;
   justify-content: center;
@@ -455,6 +470,19 @@ h2 {
   background-color: #f9f9f9;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateX(-30px);
+  animation: fadeInLeft 1.2s ease forwards;
+}
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 #contact-container #formulario input,
 #contact-container #formulario textarea {
@@ -497,6 +525,19 @@ h2 {
   border-radius: 10px;
   border: none;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateX(30px);
+  animation: fadeInRight 1.2s ease forwards;
+}
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 /*Estilo del footer*/
@@ -543,10 +584,9 @@ h2 {
   font-size: 20px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   #Resiliencia, #servicios {
-    width: 100%;
-    padding: 10px;
+    width: 90%;
   }
   h1 {
     font-size: 30px;

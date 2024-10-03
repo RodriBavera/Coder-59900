@@ -7,6 +7,20 @@
     text-align: center;
     margin-bottom: 50px;
     @include efecto-fondo;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 #section__contacto {
@@ -39,6 +53,20 @@
             background-color: #f9f9f9;
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0,         0.1);
+            opacity: 0;
+            transform: translateX(-30px);
+            animation: fadeInLeft 1.2s ease forwards;
+        }
+
+        @keyframes fadeInLeft {
+            0% {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
         }
         /* Campos del formulario */
         #formulario input,
@@ -87,7 +115,20 @@
             border-radius: 10px;
             border: none;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }                 
+            opacity: 0;
+            transform: translateX(30px);
+            animation: fadeInRight 1.2s ease forwards;
+        }  
+        @keyframes fadeInRight {
+            0% {
+                opacity: 0;
+                transform: translateX(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
 
 }
 
